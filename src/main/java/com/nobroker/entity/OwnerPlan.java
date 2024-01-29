@@ -3,9 +3,10 @@ package com.nobroker.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
+@Data
 
 public class OwnerPlan {
     @Id
@@ -20,8 +21,8 @@ public class OwnerPlan {
     private boolean rentalAgreement;
     @Column(name = "property_promotion")
     private boolean propertyPromotion;
-    @Column(name = "gauranteed_tenants")
-    private  boolean gauranteedTenants;
+    @Column(name = "guaranteed_tenants")
+    private  boolean guaranteedTenants;
     @Column(name = "showing_property")
     private boolean showingProperty;
     @Column(name = "facebook_marketing_of-property")
