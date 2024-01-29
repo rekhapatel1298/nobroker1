@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "owner_plans")
+
 public class OwnerPlan {
     @Id
     private long planId;
@@ -16,8 +16,6 @@ public class OwnerPlan {
     private double price;
     @Column(name ="plan_validity")
     private  int planValidity;
-    @Column(name = "property_promotion")
-    private boolean relationshipManager;
     @Column(name = "rental_agreement")
     private boolean rentalAgreement;
     @Column(name = "property_promotion")
