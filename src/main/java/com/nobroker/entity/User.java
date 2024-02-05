@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private long id;
+    private long id;
     private String name;
     @Column(unique = true )
     private String email;
     private String mobile;
     private String password;
-    private boolean emailVerificati;
+    private boolean emailVerification;
 
 }
