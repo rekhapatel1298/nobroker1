@@ -15,7 +15,7 @@ public class LoginController {
     @Autowired
     private EmailVerificationService emailVerificationService;
 
-    //'http://localhost:8080/api//send-otp-for-login?email=twilio.send.sms3@gmail.com'
+    //'http://localhost:8080/api/send-otp-for-login?email=twilio.send.sms3@gmail.com'
     @PostMapping("/send-otp-for-login")
     public Map<String, String> sendOtpForLogin(@RequestParam String email) {
         return emailVerificationService.sendOtpForLogin(email);
